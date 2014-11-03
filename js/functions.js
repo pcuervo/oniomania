@@ -25,11 +25,14 @@
 	}); 
 
 	$(function(loadContent){
-		$(".load-tienda").click(function() {
-			$(".content-p").load("tienda.html #tienda-container");
+		$(".load-home").click(function() {
+			$(".menu-desktop").removeClass("menu-top").addClass("menu-bottom").css({"transition" : "ease all 1s"});
+			$(".show-home").css({"transition" : "ease all 1s"});
+			$(".content-p").css({"top":"85vh","transition":"ease all 1s"});
+			$(".carousel-fade").css({"opacity":"1","transition":"ease all .8s"});
 		});
-		$(".load-tienda").click(function() {
-			$(".content-p").load("tienda.html #tienda-container");
+		$(".load-acerca").click(function() {
+			$(".content-p").load("acerca.html #acerca-container");
 		});
 		$(".load-tienda").click(function() {
 			$(".content-p").load("tienda.html #tienda-container");
