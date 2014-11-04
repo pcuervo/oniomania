@@ -76,7 +76,7 @@ a{
 //NAV*******
 .menu-mobile{
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     background-color: #fff;
 }
 //********************
@@ -95,13 +95,14 @@ a{
         width: 100%;
         z-index: 4;
         nav{
+            width: 100%;
+            height: 50vh;
+            padding: 35px 0;
+            text-align: center;
             position: relative;
             list-style: none;
             display: inline-block;
             font-size: 1.5em;
-            width: 100%;
-            height: 50vh;
-            padding: 35px 0;
             text-transform: uppercase;
             h1{
                 position: absolute;
@@ -116,25 +117,19 @@ a{
                 }
             }
             a{
-                display: inline-block;
-                width: 100%;
-                float: left;
+                display: block;
                 text-align: center;
                 letter-spacing: 2px;
                 text-decoration: none;
                 &.menu{
-                    width: 100%;
                     text-align: center;
-                    float: left;
                     &:hover{
                         .transition;
                     }
                 }
             }
             .rombo{
-                width: 100%;
                 text-align: center;
-                float: left;
                 cursor: auto;
             }
         }
@@ -161,13 +156,13 @@ a{
         // Hay que revisar estos comentrios
     }
     .menu-mobile{
-        height: 15vh;
+        height: 10vh;
         background-color: #fff;
         position: fixed;
         top: 100vh;
         z-index: 6;
         a{
-            height: 15vh;
+            height: 10vh;
             padding: 1vh;
             img{
                 height: 80%;
@@ -244,12 +239,12 @@ a{
 
     //CONTENT*********************************************
     .to-load{
-        height: 85vh;
+        height: 100vh;
         width: 100%;
+        padding-top: 10vh;
         background-color: #fff;
         position: absolute;
         top: 100%;
-        margin-top: 15vh;
         z-index: 3;
     }
     //*****************************************************
@@ -372,6 +367,7 @@ a{
         z-index: 4;
         nav{
             width: 90%;
+            height: auto;
             h1{
                 position: absolute;
                 left: 45%;
@@ -386,30 +382,23 @@ a{
             }
             a{
                 display: inline-block;
-                float: left;
                 text-align: center;
                 text-decoration: none;
-                &.menu{
-                    width: 20%;
-                    text-align: center;
-                    float: left;
-                }
             }
-            .rombo{
-                width: 10%;
+            .rombo, .menu{
+                margin: 0 20px;
             }
         }
     }
     .menu-top{
-        height: 15vh;
+        height: 10vh;
         position: fixed;
-        top: 0;
+        top: 50px;
         -webkit-transition: all ease 1s;
         -moz-transition: all ease 1s;
         -ms-transition: all ease 1s;
         -o-transition: all ease 1s;
         .show-home{
-            top: 2vh;
             -webkit-transition: all ease 1s;
             -moz-transition: all ease 1s;
             -ms-transition: all ease 1s;
@@ -417,9 +406,9 @@ a{
         }
     }
     .menu-bottom{
-        height: 15vh;
+        height: 10vh;
         position: fixed;
-        top: 85vh;
+        top: 90vh;
         .show-home{
             top: -26px;
         }
@@ -430,9 +419,9 @@ a{
 
 
     //CONTENT***********************************
-    .to-load{
-        height: 85vh;
-    }
+    // .to-load{
+    //     height: 90vh;
+    // }
     //*******************************************
 
 
@@ -442,7 +431,7 @@ a{
     //SLIDER HOME************************************************
     .carousel{
             &.home{
-                height: 85vh;
+                height: 90vh;
                 z-index: 2;
             }
     }
