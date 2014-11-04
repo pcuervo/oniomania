@@ -17,34 +17,14 @@
     <body>
 
         <header class="clearfix">
-            <nav class="hidden-sm hidden-md hidden-lg navbar navbar-default" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only"></span>
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="images/logo_oniomania.png" alt=""></a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-mobile" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#index.html">Home</a></li>
-                        <li><a href="acerca.html">Acerca</a></li>
-                        <li><a href="tienda.html">Tienda</span></a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </nav>
-
             <div class="menu-desktop clearfix bottom-transition">
                 <nav class="center block">
-                    <a class="rombo">&#9830</a>
+                    <a class="rombo"><img src="images/rombo.png" alt=""></a>
                     <a class="menu">Home</a>
                     <a class="menu">Acerca</a>
                     <a class="menu">Tienda</a>
                     <a class="menu">Contacto</a>
-                    <a class="rombo">&#9830</a>
+                    <a class="rombo"><img src="images/rombo.png" alt=""></a>
                     <h1 class="center block hide-menu">
                         <img src="images/logo_M.png" alt="" />
                     </h1>
@@ -52,128 +32,199 @@
             </div>
         </header>
 
-            <div class="content clearfix">
-                <form role="form" class="clearfix tienda" id="tienda-container">
-                    <!-- SLIDER PLAYERAS -->
-                    <div id="sliderPlayera" class="carousel store slide col-xs-12 col-sm-3" data-ride="carousel" data-interval="false">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner tienda">
-                            <div class="item active">
-                                <div class="col-xs-9 col center block">
-                                    <img class="center block" src="images/tienda/tank.png" alt="">
-                                    <div class="radio">
-                                        <label class="col-xs-8 center block">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                        3
-                                        </label>
-                                    </div> 
-                                </div>  
-                            </div>
+        <div id="tienda-container" class="[ center block ] [ clearfix ]">
+            <form role="form" class="[ clearfix ] [ tienda ]">
+                <!-- SLIDER PLAYERAS -->
+                <div id="sliderPlayera" class="[ carousel store slide ] [ col-xs-12 col-sm-4 ] [ clearfix ]" data-ride="carousel" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="[ carousel-inner ] [ tienda ]">
+                        <div class="[ item active ] [ margin-bottom ] [ clearfix ]">
+                            <div class="[ col-xs-9 ] [ center block ] [ product ]">
+                                <label class="[ center block ] [ playera ] ">
+                                    <img class="[ center block ] [ margin-bottom ]" src="images/tienda/tank.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                            </div> 
+                            <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                                <label class="[ col-xs-4 ]">
+                                    CH
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    M
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    L
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label> 
+                            </div>  
 
-                            <div class="item">
-                                <div class="col-xs-9 center block">
-                                    <img class="center block" src="images/tienda/tank.png" alt="">
-                                    <div class="radio">
-                                        <label class="col-xs-8 center block">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                        3
-                                        </label>
-                                    </div>
-                                </div>  
-                            </div>
+                        </div>
 
-                            <div class="item clearfix">
-                                <div class="col-xs-9 center block clearfix">
-                                <img class="center block" src="images/tienda/tank.png" alt="">
-                                    <div class="radio">
-                                        <label class="col-xs-8 center block">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                        3
-                                        </label>
-                                    </div>
-                                </div>
+                        <div class="[ item ] [ margin-bottom ] [ clearfix ]">
+                            <div class="[ col-xs-9 ] [ center block ]">
+                                <label class="[ center block ] [ product ]">
+                                    <img class="[ center block ] [ margin-bottom ]" src="images/tienda/tank.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                            </div> 
+                            <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                                <label class="[ col-xs-4 ]">
+                                    CH
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    M
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    L
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label> 
+                            </div>  
+                        </div>
+
+                        <div class="[ item ] [ margin-bottom ] [ clearfix ]">
+                            <div class="[ col-xs-9 ] [ center block ] [ clearfix ]">
+                                <label class="[ center block ] [ product ]">
+                                    <img class="[ center block ] [ margin-bottom ]" src="images/tienda/tank.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                            </div>
+                            <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                                <label class="[ col-xs-4 ]">
+                                    CH
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    M
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    L
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="[ btn btn-primary ] [ center block ] [ white ]">Ver todos los modelos</button>
+
+                    <!-- Controls -->
+                    <a class="[ left ] [ carousel-control ]" href="#sliderPlayera" role="button" data-slide="prev">
+                      <span class="[ glyphicon glyphicon-chevron-left ]"></span>
+                    </a>
+
+                    <a class="[ right ] [ carousel-control ]" href="#sliderPlayera" role="button" data-slide="next">
+                      <span class="[ glyphicon glyphicon-chevron-right ]"></span>
+                    </a>
+                </div><!--SLIDER PLAYERAS--> 
+
+                <!-- PREVIEW PLAYERA -->
+                <div class="[ hidden-xs col-sm-4 ] [ preview-playera ]">   
+                    <img class="[ center block ]" src="images/tienda/Ready_TANK WOMEN.jpg" alt="">
+                    <div class="[ radio ]">
+                    </div>              
+                </div><!-- PREVIEW PLAYERA -->
+
+                <!-- SLIDER PLAYERAS -->
+                <div id="estampados" class="[ carousel store slide ] [ col-xs-12 col-sm-4 ] [ clearfix ]" data-ride="carousel" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="[ carousel-inner ] [ tienda ]">
+                        <div class="[ item active ]">
+                            <div class="[ col-xs-9 ] [ center block ]">
+                                <label class="[ center block ] [ product ]">
+                                    <img class="[ center block ] [ margin-bottom ]" src="images/disenos/rombos.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label> 
+                            </div>
+                            <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                                <label class="[ col-xs-4 ]">
+                                    <img class="colores" src="images/colores/romboN.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    <img class="colores" src="images/colores/romboM.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    <img class="colores" src="images/colores/romboD.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                            </div> 
+                        </div>
+
+                        <div class="[ item ]">
+                            <div class="[ col-xs-9 ] [ center block ]">
+                                <label class="[ center block ] [ product ]">
+                                    <img class="[ center block ] [ margin-bottom ]" src="images/disenos/plano.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                            </div> 
+                            <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                                <label class="[ col-xs-4 ]">
+                                    <img class="colores" src="images/colores/romboN.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    <img class="colores" src="images/colores/romboM.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    <img class="colores" src="images/colores/romboD.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label> 
                             </div>
                         </div>
 
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#sliderPlayera" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-
-                        <a class="right carousel-control" href="#sliderPlayera" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div><!--SLIDER PLAYERAS--> 
-
-                    <!-- PREVIEW PLAYERA -->
-                    <div class="[ hidden-xs col-sm-6 ] [ preview-playera ]">   
-                        <img class="center block" src="images/slider_01.jpg" alt="">
-                        <div class="radio">
-                        </div>              
-                    </div><!-- PREVIEW PLAYERA -->
-
-                    <!--SLIDER DISEÑOS-->
-                    <div class="col-xs-12 col-sm-3 right">
-                        <div id="estampados" class="carousel store slide" data-ride="carousel" data-interval="false">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="col-xs-9 col center block">
-                                        <img class="center block" src="images/diseños/rombos.png" alt="">
-                                        <div class="radio">
-                                        <label class="col-xs-8 center block">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                        Rombos
-                                        </label>
-                                    </div>
-                                </div>  
+                        <div class="[ item ] [ clearfix ]">
+                            <div class="[ col-xs-9 ] [ center block ] [ clearfix ]">
+                                <label class="[ center block ] [ product ]">
+                                    <img class="[ center block ] [ margin-bottom ]" src="images/disenos/chic.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
                             </div>
-
-                            <div class="item">
-                                <div class="col-xs-9 center block">
-                                    <img class="center block" src="images/disenos/plano.png" alt="">
-                                    <div class="radio">
-                                        <label class="col-xs-8 center block">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                        Plano
-                                        </label>
-                                    </div>
-                                </div>   
-                            </div>
-
-                            <div class="item">
-                                 <div class="col-xs-9 center block">
-                                    <img class="center block" src="images/disenos/chic.png" alt="">
-                                    <div class="radio">
-                                        <label class="col-xs-8 center block">
-                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                            Chic
-                                        </label>
-                                    </div>
-                                </div>
+                            <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                                <label class="[ col-xs-4 ]">
+                                    <img class="colores" src="images/colores/romboN.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    <img class="colores" src="images/colores/romboM.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
+                                <label class="[ col-xs-4 ]">
+                                    <img class="colores" src="images/colores/romboD.png" alt="">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                </label>
                             </div>
                         </div>
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#estampados" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
+                    </div>
 
-                        <a class="right carousel-control" href="#estampados" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
+                    <button class="[ btn btn-primary ] [ center block ] [ white ]">Ver todos los modelos</button>
 
-                        <button class="btn btn-primary center block">Ver todo</button>
-                    </div><!--SLIDER DISEÑOS-->
+                    <!-- Controls -->
+                    <a class="[ left ] [ carousel-control ]" href="#estampados" role="button" data-slide="prev">
+                      <span class="[ glyphicon glyphicon-chevron-left ]"></span>
+                    </a>
 
-                    <!-- PREVIEW PLAYERA -->
-                    <div class="[ hidden-sm hidden-md hidden-lg ] [ preview-playera mobile ]">   
-                        <img class="center block" src="images/slider_01.jpg" alt="">
-                        <div class="radio">
-                        </div>              
-                    </div><!-- PREVIEW PLAYERA -->
-                </form>
+                    <a class="[ right ] [ carousel-control ]" href="#estampados" role="button" data-slide="next">
+                      <span class="[ glyphicon glyphicon-chevron-right ]"></span>
+                    </a>
+                </div><!--SLIDER PLAYERAS-->
+
+                <!-- PREVIEW PLAYERA -->
+                <div class="[ hidden-sm hidden-md hidden-lg ] [ preview-playera mobile ] [ clearfix ]">   
+                    <img class="[ center block ]" src="images/slider_01.jpg" alt="">            
+                </div><!-- PREVIEW PLAYERA -->
+            </form>
+            <hr class="[ margin-bottom ]">
+            <div class="[ col-xs-12 col-sm-8 col-md-6 ] [ center block ] [ next-step ] [ clearfix ]">
+                <button class="[ btn btn-primary black ]">AGREGAR AL CARRITO</button>
+                <button class="[ btn btn-primary black ]">CHECKOUT</button>
             </div>
-        </div><!--CONTAINER-FLUID-->
+        </div>
 
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>

@@ -1,5 +1,5 @@
 html,
-body { height: 100%; overflow: hidden; }
+body { height: 100%; min-width: 320px; overflow: hidden; }
 
 //FONT FACE************
 @font-face {
@@ -19,6 +19,7 @@ body { height: 100%; overflow: hidden; }
   -ms-transition:     @transition;
   -o-transition:      @transition;
 }
+//**********************************
 
 
 
@@ -37,23 +38,46 @@ body { height: 100%; overflow: hidden; }
 
 
 //GENERAL*******************************
+.margin-bottom{
+    margin-bottom: 2vh;
+}
+
 .texto{
     font-family: @font-family-serif;
     font-size: 1.2em;
     line-height: 1.5em;
 }
-.boton{
-    background-color: none;
-    border: solid 1px @gray-darker;
-    border-radius: 0;
-    color: @gray-darker;
-    text-transform: uppercase;
-    font-weight: 100;
-    .transition;
-    &:hover{
+
+button{
+    &.white{
+        background-color: #fff;
         border: solid 1px @gray-darker;
+        border-radius: 0;
+        color: @gray-darker;
+        text-transform: uppercase;
+        font-family: geometric;
+        font-weight: 100;
+        .transition;
+        &:hover{
+            border: solid 1px @gray-darker;
+            background-color: @gray-darker;
+            color: #fff;
+        }
+    }
+    &.black{
         background-color: @gray-darker;
+        border: solid 1px @gray-darker;
+        border-radius: 0;
         color: #fff;
+        text-transform: uppercase;
+        font-family: geometric;
+        font-weight: 100;
+        .transition;
+        &:hover{
+            border: solid 1px @gray-darker;
+            background-color: #fff;
+            color: @gray-darker;
+        }
     }
 }
 
@@ -63,23 +87,23 @@ a{
     cursor: pointer;
 }
 
-.container-fluid{
-    padding: 0;
-    background-repeat: repeat;
-    height: 100%;
+hr{
+    margin: 0;
+    border: solid 1px #000;
 }
+//TERMINA GENERAL*******************
 
 
 
 
 
-//NAV*******
+//NAV***********************************
 .menu-mobile{
     width: 100%;
     height: 15vh;
     background-color: #fff;
 }
-//********************
+//**************************************
 
 
 
@@ -282,50 +306,73 @@ a{
     #tienda-container{
         overflow-y: scroll;
         height: 80vh;
-    }
-    .carousel{
-        &.store{
-            height: 100vh;
-        }
-    }
-    .carousel-inner{
-        &.tienda{
-            min-height: 320px;
-            max-height: 800px;
-        }
-    }
-    .item{ width: 100%;
-        p{ color: @gray-darker; }
-        img{ width: 100%; }
-        label{ text-align: center; }
-    }
-    .carousel-indicators {
-        position: relative;
-        left: 0;
-        li{
-            background-color: @gray;
-            &.active{
-                background-color: @brand-primary;
+        width: 90%;
+    
+        .carousel-inner{
+            &.tienda{
+                height: 70vh;
             }
         }
-    }
-    .carousel-control{
-        &.right, &.left{
-            background-image: none;
-            span{
-                color: @brand-primary;
-                opacity: none
+        
+        .item{ 
+            width: 100%;
+            height: 70vh;
+            p{ color: @gray-darker; }
+            
+            label{
+                text-align: center; 
+                font-family: geometric;
+            }
+            .product{
+                height: 60vh;
+                img{ 
+                    width: auto; height: 55vh;
+                }
+            }
+            .info{
+                height: 5vh; 
             }
         }
-    }
-    .preview-playera{
-        overflow-x: hidden;
-        img{
-            height: 100%;
+        input[type="radio"] {
+           
         }
-        &.mobile{
+        .carousel-indicators {
+            position: relative;
+            left: 0;
+            li{
+                background-color: @gray;
+                &.active{
+                    background-color: @brand-primary;
+                }
+            }
+        }
+        .carousel-control{
+            height: 60vh;
+            &.right, &.left{
+                background-image: none;
+                span{
+                    color: @brand-primary;
+                    opacity: none
+                }
+            }
+        }
+        .preview-playera{
+            overflow-x: hidden;
             img{
-                height: 440px;
+                height: 100%;
+            }
+            &.mobile{
+                img{
+                    height: 440px;
+                }
+            }
+        }
+
+        .next-step{
+            button{
+                width: 44%;
+                margin: 0 3%;
+                float: left;
             }
         }
     }
@@ -369,9 +416,11 @@ a{
     .menu-desktop{
         background-color: #fff;
         width: 100%;
+        height: 10vh;
         z-index: 4;
         nav{
             width: 90%;
+            height: 10vh;
             h1{
                 position: absolute;
                 left: 45%;
@@ -392,29 +441,7 @@ a{
                 &.menu{
                     width: 20%;
                     text-align: center;
-<<<<<<< HEAD
-                    text-decoration: none;
-                    
-                    &.menu{
-                        width: 20%;
-                        text-align: center;
-                        float: left;
-                        
-                        &:hover{
-                            background: none;
-                            color: @gray-light;
-                            .transition;
-                        }
-                    }
-
-                    &.rombo{
-                        width: 10%;
-                        text-align: center;
-                        float: left;
-                    }
-=======
                     float: left;
->>>>>>> 9a74f9b49aea5cabf080175e00c9cd9e02a7a1a6
                 }
             }
             .rombo{
@@ -484,45 +511,70 @@ a{
     #tienda-container{
         overflow-y: scroll;
         height: 80vh;
-    }
-    .carousel-inner{
-        &.tienda{
+        width: 90%;
+    
+        .carousel-inner{
+            &.tienda{
+                height: 60vh;
+            }
+        }
+        
+        .item{ 
+            width: 100%;
+            height: 70vh;
+            p{ color: @gray-darker; }
+            
+            label{
+                text-align: center; 
+                font-family: geometric;
+            }
+            .product{
+                height: 50vh;
+                img{ 
+                    width: auto; height: 45vh;
+                }
+            }
+            .info{
+                height: 5vh; 
+                font-size: 1.5em;
+            }
+        }
+        input[type="radio"] {
+           
+        }
+        .carousel-indicators {
+            position: relative;
+            left: 0;
+            li{
+                background-color: @gray;
+                &.active{
+                    background-color: @brand-primary;
+                }
+            }
+        }
+        .carousel-control{
             height: 60vh;
-        }
-    }
-    .item{ width: 100%;
-        p{ color: @gray-darker; }
-        img{ width: 100%; }
-        label{ text-align: center; }
-    }
-    .carousel-indicators {
-        position: relative;
-        left: 0;
-        li{
-            background-color: @gray;
-            &.active{
-                background-color: @brand-primary;
+            &.right, &.left{
+                background-image: none;
+                span{
+                    color: @brand-primary;
+                    opacity: none
+                }
             }
         }
-    }
-    .carousel-control{
-        &.right,
-        &.left{
-            background-image: none;
-            span{
-                color: @brand-primary;
-                opacity: none
-            }
-        }
-    }
-    .preview-playera{
-        overflow-x: hidden;
-        img{
-            height: 100%;
-        }
-        &.mobile{
+        .preview-playera{
+            overflow: hidden;
+            height: 70vh;
             img{
-                height: 440px;
+                height: 70vh;
+            }
+        }
+
+        .next-step{
+            button{
+                width: 44%;
+                margin: 0 3%;
+                float: left;
             }
         }
     }
