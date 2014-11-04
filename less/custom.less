@@ -1,16 +1,18 @@
 html,
-body {
-    height: 100%;
-    overflow: hidden;
-    
-}
+body { height: 100%; overflow: hidden; }
 
+//FONT FACE************
 @font-face {
     font-family: geometric !important;
-    src: url(../fonts/geometric.ttf);
+    src: url('../fonts/geometric.ttf');
     letter-spacing: .07em;
 }
 
+
+
+
+
+//MIXINS************
 .transition (@transition: all 0.3s ease ) {
   -webkit-transition: @transition;
   -moz-transition:    @transition;
@@ -19,32 +21,27 @@ body {
 }
 
 
+
+
+
 //ALINGMENT************
-
-.right{
-    float: right !important;
-}
-
-.left{
-    float: left !important;
-}
+.right{ float: right !important; }
+.left{ float: left !important; }
 
 .block{ display: block !important; }
 .center{ margin-left: auto !important; margin-right: auto !important; float: none !important; }
-
 //********************
 
 
 
 
-//GENERAL*******************************
 
+//GENERAL*******************************
 .texto{
     font-family: @font-family-serif;
     font-size: 1.2em;
     line-height: 1.5em;
 }
-
 .boton{
     background-color: none;
     border: solid 1px @gray-darker;
@@ -53,7 +50,6 @@ body {
     text-transform: uppercase;
     font-weight: 100;
     .transition;
-
     &:hover{
         border: solid 1px @gray-darker;
         background-color: @gray-darker;
@@ -65,7 +61,6 @@ a{
     font-family:geometric;
     text-decoration: none;
     cursor: pointer;
-
     &:hover{
         color: @gray-light;
     }
@@ -78,538 +73,452 @@ a{
 }
 
 
-//NAV*******
 
+
+
+//NAV*******
 .menu-mobile{
     width: 100%;
     height: 15vh;
     background-color: #fff;
 }
+//********************
+
 
 
 
 
 /*==========  Mobile First Method  ==========*/
 
-    /* Custom, iPhone Retina */ 
-    @media only screen and (min-width : 320px) {
-
-        .menu-desktop{
-            background-color: #fff;
+/* Custom, iPhone */
+@media only screen and (min-width : 320px) {
+    // ********* Menu
+    .menu-desktop{
+        background-color: #fff;
+        width: 100%;
+        z-index: 4;
+        nav{
+            position: relative;
+            list-style: none;
+            display: inline-block;
+            font-size: 1.5em;
             width: 100%;
-            z-index: 4;
-
-            nav{
-                position: relative;
-                list-style: none;
-                display: inline-block;
-                font-size: 1.5em;
-                width: 100%;
-                height: 50vh;
-                padding: 35px 0;
-                text-transform: uppercase;
-
-                h1{
-                    position: absolute;
-                    left: 41%;
-                    right: 41%;
-                    top: -26px;
-                    width: 50px;
-                    margin: 0;
-
-                    img{
-                        width: 100%;
-                        margin: 0 auto;
-                    }
-                }
-
-                a{
-                    display: inline-block;
-                    width: 100%;
-                    float: left;
-                    text-align: center;
-                    letter-spacing: 2px;
-                    text-decoration: none;
-                    
-                    &.menu{
-                        width: 100%;
-                        text-align: center;
-                        float: left;
-
-                        &:hover{
-                            background-color: #000;
-                            color: #fff;
-                            .transition;
-                        }
-                    }
-
-
-                    &.rombo{
-                        width: 100%;
-                        text-align: center;
-                        float: left;
-                    }
-                }
-            }
-        }
-
-        &.menu-top{
             height: 50vh;
-            position: fixed;
-            top: -50vh;
-            -webkit-transition: all ease 1s;
-            -moz-transition: all ease 1s;
-            -ms-transition: all ease 1s;
-            -o-transition: all ease 1s;
-            transition: all ease 1s;
-        }
-
-        .menu-bottom{
-            height: 50vh;
-            position: fixed;
-            top: 50vh;
-            // -webkit-transition: all ease 1s;
-            // -moz-transition: all ease 1s;
-            // -ms-transition: all ease 1s;
-            // -o-transition: all ease 1s;
-            // transition: all ease 1s;
-        }
-
-        .menu-mobile{
-            height: 15vh;
-            background-color: #fff;
-            position: fixed;
-            top: 100vh;
-            z-index: 6;
-
-            a{
-                height: 15vh;
-                padding: 1vh;
-
+            padding: 35px 0;
+            text-transform: uppercase
+            h1{
+                position: absolute;
+                left: 41%;
+                right: 41%;
+                top: -26px;
+                width: 50px;
+                margin: 0;
                 img{
-                    height: 80%;
+                    width: 100%;
+                    margin: 0 auto;
                 }
             }
-        }
-
-        .menu-down-mobile{
-            top: 10vh;
-            -webkit-transition: all ease 1s;
-            -moz-transition: all ease 1s;
-            -ms-transition: all ease 1s;
-            -o-transition: all ease 1s;
-            transition: all ease 1s;
-        }
-
-        .menu-up-mobile{
-            top: -60vh;
-        }
-
-        //SLIDER HOME************************************************
-
-        .carousel{ 
-                &.home{
-                    height: 50vh;
-                    z-index: 2;
-                }
-        }
-
-        .item,
-        .active {
-            height: 100%;
-        }
-
-        .carousel-fade {
-          .carousel-inner {
-                .item {
-                    opacity: 0;
-                    transition-property: opacity;
-                }
-
-                .active {
-                  opacity: 1;
-                }
-
-                .active.left,
-                .active.right {
-                    left: 0;
-                    opacity: 0;
-                    z-index: 1;
-                }
-
-                .next.left,
-                .prev.right {
-                    opacity: 1;
-                }
-            }
-        }
-
-        .slider-home{
-            height: 100%;
-            background-color: #000;
-        }
-
-        .fill {
-            width: 100%;
-            height: 100%;
-            background-position: center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size: cover;
-            -o-background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        //****************************************************
-
-
-
-        //CONTENT*********************************************
-
-        .content-p{
-            height: 85vh;
-            width: 100%;
-            background-color: #fff;
-            position: absolute;
-            top: 100%;
-            margin-top: 15vh;
-            z-index: 3;
-        }
-
-        //*****************************************************
-
-
-
-
-
-        //ACERCA*******************************************
-
-
-        .logo-acerca{
-
-            margin-bottom: 20px;
-            img{
+            a{
+                display: inline-block;
                 width: 100%;
+                float: left;
+                text-align: center;
+                letter-spacing: 2px;
+                text-decoration: none;
+                &.menu{
+                    width: 100%;
+                    text-align: center;
+                    float: left;
+                    &:hover{
+                        background-color: #000;
+                        color: #fff;
+                        .transition;
+                    }
+                }
+                &.rombo{
+                    width: 100%;
+                    text-align: center;
+                    float: left;
+                }
             }
         }
+    }
+    &.menu-top{
+        height: 50vh;
+        position: fixed;
+        top: -50vh;
+        -webkit-transition: all ease 1s;
+        -moz-transition: all ease 1s;
+        -ms-transition: all ease 1s;
+        -o-transition: all ease 1s;
+        transition: all ease 1s;
+    }
+    .menu-bottom{
+        height: 50vh;
+        position: fixed;
+        top: 50vh;
+        // -webkit-transition: all ease 1s;
+        // -moz-transition: all ease 1s;
+        // -ms-transition: all ease 1s;
+        // -o-transition: all ease 1s;
+        // transition: all ease 1s;
+        // Hay que revisar estos comentrios
+    }
+    .menu-mobile{
+        height: 15vh;
+        background-color: #fff;
+        position: fixed;
+        top: 100vh;
+        z-index: 6;
+        a{
+            height: 15vh;
+            padding: 1vh;
+            img{
+                height: 80%;
+            }
+        }
+    }
+    .menu-down-mobile{
+        top: 10vh;
+        -webkit-transition: all ease 1s;
+        -moz-transition: all ease 1s;
+        -ms-transition: all ease 1s;
+        -o-transition: all ease 1s;
+        transition: all ease 1s;
+    }
+    .menu-up-mobile{
+        top: -60vh;
+    }
+    //SLIDER HOME************************************************
+    .carousel{
+            &.home{
+                height: 50vh;
+                z-index: 2;
+            }
+    }
 
-        .texto-acerca{
-            border-top: solid 1px @gray-darker;
-            border-bottom: solid 1px @gray-darker;
-            padding: 5% 1%;
+    .item,
+    .active {
+        height: 100%;
+    }
+
+    .carousel-fade {
+      .carousel-inner {
+            .item {
+                opacity: 0;
+                transition-property: opacity;
+            }
+
+            .active {
+              opacity: 1;
+            }
+
+            .active.left,
+            .active.right {
+                left: 0;
+                opacity: 0;
+                z-index: 1;
+            }
+
+            .next.left,
+            .prev.right {
+                opacity: 1;
+            }
+        }
+    }
+    .slider-home{
+        height: 100%;
+        background-color: #000;
+    }
+    .fill {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+    }
+    //****************************************************
+
+
+
+
+
+    //CONTENT*********************************************
+    .content-p{
+        height: 85vh;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        margin-top: 15vh;
+        z-index: 3;
+    }
+    //*****************************************************
+
+
+
+
+
+    //ACERCA*******************************************
+    .logo-acerca{
+
+        margin-bottom: 20px;
+        img{
+            width: 100%;
+        }
+    }
+    .texto-acerca{
+        border-top: solid 1px @gray-darker;
+        border-bottom: solid 1px @gray-darker;
+        padding: 5% 1%;
+        margin-bottom: 30px;
+    }
+    //***************************************************
+
+
+
+
+
+    //TIENDA **************************
+    #tienda-container{
+        overflow-y: scroll;
+        height: 80vh;
+    }
+    .carousel{
+        &.store{
+            height: 100vh;
+        }
+    }
+    .carousel-inner{
+        &.tienda{
+            min-height: 320px;
+            max-height: 800px;
+        }
+    }
+    .item{ width: 100%;
+        p{ color: @gray-darker; }
+        img{ width: 100%; }
+        label{ text-align: center; }
+    }
+    .carousel-indicators {
+        position: relative;
+        left: 0;
+        li{
+            background-color: @gray;
+            &.active{
+                background-color: @brand-primary;
+            }
+        }
+    }
+    .carousel-control{
+        &.right, &.left{
+            background-image: none;
+            span{
+                color: @brand-primary;
+                opacity: none
+            }
+        }
+    }
+    .preview-playera{
+        overflow-x: hidden;
+        img{
+            height: 100%;
+        }
+        &.mobile{
+            img{
+                height: 440px;
+            }
+        }
+    }
+    //*****************************************
+
+
+
+
+
+    //CONTACTO**************************
+    .form-contact{
+        font-family: geometric;
+        button{
             margin-bottom: 30px;
         }
+    }
+    .form-group{
+        margin-bottom: 15px;
+    }
+    //**********************************
+}
 
 
-        //***************************************************
 
 
 
 
-        //TIENDA **************************
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
 
-        #tienda-container{
-            overflow-y: scroll;
-            height: 80vh;
-        }
 
-        .carousel{
-            &.store{
-                height: 100vh;
-            }
-        }
 
-        .carousel-inner{
-            &.tienda{
-                min-height: 320px;
-                max-height: 800px;
-            }
-        }
 
-        .item{
 
-            width: 100%;
 
-            p{
-                color: @gray-darker;
-            }
 
-            img{
-                width: 100%;
-            }
 
-            label{
-                text-align: center;
-            }
-        }
-
-        .carousel-indicators {
-
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .menu-desktop{
+        background-color: #fff;
+        width: 100%;
+        z-index: 4;
+        nav{
             position: relative;
-            left: 0;
-
-            li{
-                background-color: @gray;
-
-                &.active{
-                    background-color: @brand-primary;
-                }
-            }
-
-
-        }
-
-        .carousel-control{
-            &.right, &.left{
-                background-image: none;
-
-                span{
-                    color: @brand-primary;
-
-                    opacity: none
-                }
-            }
-        }
-
-        .preview-playera{
-            overflow-x: hidden;
-            img{
-                height: 100%;
-            }
-
-            &.mobile{
-                img{
-                    height: 440px;
-                }
-            }
-        }
-        //*****************************************
-
-
-
-
-
-        //CONTACTO**************************
-
-
-        .form-contact{
-            font-family: geometric;
-
-            button{
-                margin-bottom: 30px;
-            }
-        }
-
-        .form-group{
-            margin-bottom: 15px;
-        }
-
-        //**********************************
-    }
-
-
-
-
-
-
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
-    }
-
-
-
-
-
-
-
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-        .menu-desktop{
-            background-color: #fff;
-            width: 100%;
-            z-index: 4;
-
-            nav{
-                position: relative;
-                list-style: none;
-                display: inline-block;
-                font-size: 1.5em;
-                width: 90%;
-                height: 15vh;
-                padding: 35px 0;
-                text-transform: uppercase;
-
-                h1{
-                    position: absolute;
-                    left: 45%;
-                    right: 45%;
-                    top: -26px;
-                    width: 50px;
-                    margin: 0;
-
-                    img{
-                        width: 100%;
-                        margin: 0 auto;
-                    }
-                }
-
-                a{
-                    display: inline-block;
-                    float: left;
-                    text-align: center;
-                    text-decoration: none;
-                    
-                    &.menu{
-                        width: 20%;
-                        text-align: center;
-                        float: left;
-                    }
-
-                    &.rombo{
-                        width: 10%;
-                        text-align: center;
-                        float: left;
-                    }
-                }
-            }
-        }
-
-        .menu-top{
+            list-style: none;
+            display: inline-block;
+            font-size: 1.5em;
+            width: 90%;
             height: 15vh;
-            position: fixed;
-            top: 0;
+            padding: 35px 0;
+            text-transform: uppercase;
+            h1{
+                position: absolute;
+                left: 45%;
+                right: 45%;
+                top: -26px;
+                width: 50px;
+                margin: 0;
+                img{
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+            a{
+                display: inline-block;
+                float: left;
+                text-align: center;
+                text-decoration: none;
+                &.menu{
+                    width: 20%;
+                    text-align: center;
+                    float: left;
+                }
+                &.rombo{
+                    width: 10%;
+                    text-align: center;
+                    float: left;
+                }
+            }
+        }
+    }
+    .menu-top{
+        height: 15vh;
+        position: fixed;
+        top: 0;
+        -webkit-transition: all ease 1s;
+        -moz-transition: all ease 1s;
+        -ms-transition: all ease 1s;
+        -o-transition: all ease 1s;
+        .show-home{
+            top: 2vh;
             -webkit-transition: all ease 1s;
             -moz-transition: all ease 1s;
             -ms-transition: all ease 1s;
             -o-transition: all ease 1s;
+        }
+    }
+    .menu-bottom{
+        height: 15vh;
+        position: fixed;
+        top: 85vh;
+        .show-home{
+            top: -26px;
+        }
+    }
 
-            .show-home{
-                top: 2vh;
-                -webkit-transition: all ease 1s;
-                -moz-transition: all ease 1s;
-                -ms-transition: all ease 1s;
-                -o-transition: all ease 1s;
 
+
+
+
+    //CONTENT***********************************
+    .content-p{
+        height: 85vh;
+    }
+    //*******************************************
+
+
+
+
+
+    //SLIDER HOME************************************************
+    .carousel{
+            &.home{
+                height: 85vh;
+                z-index: 2;
+            }
+    }
+    //****************************************************
+
+
+
+
+
+    //CONTENT*********************************************
+    //*****************************************************
+
+
+
+
+    //TIENDA **************************
+    #tienda-container{
+        overflow-y: scroll;
+        height: 80vh;
+    }
+    .carousel-inner{
+        &.tienda{
+            height: 60vh;
+        }
+    }
+    .item{ width: 100%;
+        p{ color: @gray-darker; }
+        img{ width: 100%; }
+        label{ text-align: center; }
+    }
+    .carousel-indicators {
+        position: relative;
+        left: 0;
+        li{
+            background-color: @gray;
+            &.active{
+                background-color: @brand-primary;
             }
         }
-
-        .menu-bottom{
-            height: 15vh;
-            position: fixed;
-            top: 85vh;
-
-            .show-home{
-                top: -26px;               
+    }
+    .carousel-control{
+        &.right,
+        &.left{
+            background-image: none;
+            span{
+                color: @brand-primary;
+                opacity: none
             }
         }
-
-
-
-
-
-        //CONTENT***********************************
-
-        .content-p{
-            height: 85vh;
+    }
+    .preview-playera{
+        overflow-x: hidden;
+        img{
+            height: 100%;
         }
-
-        //*******************************************
-
-        //SLIDER HOME************************************************
-
-        .carousel{ 
-                &.home{
-                    height: 85vh;
-                    z-index: 2;
-                }
-        }
-
-        //****************************************************
-
-
-
-
-        //CONTENT*********************************************
-
-
-        //*****************************************************
-
-
-
-
-        //TIENDA **************************
-
-        #tienda-container{
-            overflow-y: scroll;
-            height: 80vh;
-        }
-
-        .carousel-inner{
-            &.tienda{
-                height: 60vh;
-            }
-        }
-
-        .item{
-
-            width: 100%;
-
-            p{
-                color: @gray-darker;
-            }
-
+        &.mobile{
             img{
-                width: 100%;
-            }
-
-            label{
-                text-align: center;
+                height: 440px;
             }
         }
-
-        .carousel-indicators {
-
-            position: relative;
-            left: 0;
-
-            li{
-                background-color: @gray;
-
-                &.active{
-                    background-color: @brand-primary;
-                }
-            }
-
-
-        }
-
-        .carousel-control{
-            &.right, &.left{
-                background-image: none;
-
-                span{
-                    color: @brand-primary;
-
-                    opacity: none
-                }
-            }
-        }
-
-        .preview-playera{
-            overflow-x: hidden;
-            img{
-                height: 100%;
-            }
-
-            &.mobile{
-                img{
-                    height: 440px;
-                }
-            }
-        }
-        //*****************************************
     }
+    //*****************************************
+}
 
 
 
@@ -618,21 +527,19 @@ a{
 
 
 
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
 
-    }
-
-
+}
 
 
 
 
 
 
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-
-    }
 
 
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

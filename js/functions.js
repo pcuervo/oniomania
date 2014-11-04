@@ -1,10 +1,6 @@
-
-
-
 (function( $ ) {
     "use strict";
- 
-    $(function(slideContenido) {
+	$(function(){
 		$(".menu").click(function() {
 			$(".menu-desktop").removeClass("menu-bottom").addClass("menu-top");
 			$(".menu-mobile").css({"top":"0","transition":"ease all 1s"});
@@ -22,9 +18,7 @@
 		$(".show-menu-mobile").click(function() {
 			$(".menu-desktop").toggleClass("menu-down-mobile");
 		});
-	}); 
 
-	$(function(loadContent){
 		$(".load-tienda").click(function() {
 			$(".content-p").load("tienda.html #tienda-container");
 		});
