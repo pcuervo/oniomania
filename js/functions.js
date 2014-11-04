@@ -19,6 +19,7 @@
 			$(".menu-desktop").toggleClass("menu-down-mobile");
 		});
 
+
 		$(".load-tienda").click(function() {
 			$(".js-to-load").load("tienda.html #tienda-container");
 		});
