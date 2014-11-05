@@ -1,5 +1,5 @@
 html,
-body { height: 100%; min-width: 320px; overflow: hidden; }
+body { height: 100%; min-width: 320px !important; overflow: hidden; }
 
 //FONT FACE************
 @font-face {
@@ -265,7 +265,7 @@ hr{
     .to-load{
         height: 100vh;
         width: 100%;
-        padding-top: 10vh;
+        padding-top: 20vh;
         background-color: #fff;
         position: absolute;
         top: 100%;
@@ -326,10 +326,12 @@ hr{
             }
             .info{
                 height: 5vh;
+                font-family: geometric;
+                font-size: 1.2em;
             }
         }
         input[type="radio"] {
-
+            display:none;
         }
         .carousel-indicators {
             position: relative;
@@ -342,7 +344,7 @@ hr{
             }
         }
         .carousel-control{
-            height: 60vh;
+            height: 45vh;
             &.right, &.left{
                 background-image: none;
                 span{
@@ -352,24 +354,34 @@ hr{
             }
         }
         .preview-playera{
-            overflow-x: hidden;
+            height: 60vh;
+            position: relative;
             img{
+                width: auto;
                 height: 100%;
-            }
-            &.mobile{
-                img{
-                    height: 440px;
-                }
+                position: absolute;
+                bottom: 0;
             }
         }
-
-        .next-step{
-            button{
-                width: 44%;
-                margin: 0 3%;
-                float: left;
-            }
+        .ver-todos{
+        height: 5vh;
+        background-color: #fff;
+        border-bottom: solid 1px @gray-darker;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        color: @gray-darker;
+        text-transform: uppercase;
+        font-family: geometric;
+        font-weight: 100;
+        .transition;
+        &:hover{
+            border: solid 1px @gray-darker;
+            background-color: @gray-darker;
+            color: #fff;
         }
+    }
     }
     //*****************************************
 
@@ -397,6 +409,9 @@ hr{
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+    #tienda-container{
+        width:60%;
+    }
 }
 
 
@@ -503,13 +518,13 @@ hr{
 
         .carousel-inner{
             &.tienda{
-                height: 60vh;
+                height: 55vh;
             }
         }
 
         .item{
             width: 100%;
-            height: 70vh;
+            height: 45vh;
             p{ color: @gray-darker; }
 
             label{
@@ -517,7 +532,7 @@ hr{
                 font-family: geometric;
             }
             .product{
-                height: 50vh;
+                height: 45vh;
                 img{
                     width: auto; height: 45vh;
                 }
@@ -528,7 +543,7 @@ hr{
             }
         }
         input[type="radio"] {
-
+            display: none;
         }
         .carousel-indicators {
             position: relative;
@@ -541,7 +556,7 @@ hr{
             }
         }
         .carousel-control{
-            height: 60vh;
+            height: 45vh;
             &.right, &.left{
                 background-image: none;
                 span{
@@ -551,18 +566,12 @@ hr{
             }
         }
         .preview-playera{
-            overflow: hidden;
-            height: 70vh;
+            height: 60vh;
+            border-bottom: solid 1px #000;
+            padding: 0;
             img{
-                height: 70vh;
-            }
-        }
-
-        .next-step{
-            button{
-                width: 44%;
-                margin: 0 3%;
-                float: left;
+                width: auto;
+                height: 100%;
             }
         }
     }
