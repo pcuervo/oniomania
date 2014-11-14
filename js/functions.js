@@ -21,16 +21,16 @@
 
 
 		$(".load-tienda").click(function() {
-			$(".js-to-load").load("tienda.html #tienda-container");
+			$(".js-to-load").load("tienda_2.html #tienda-container");
 		});
 		$(".load-tienda").click(function() {
-			$(".js-to-load").load("tienda.html #tienda-container");
+			$(".js-to-load").load("tienda_2.html #tienda-container");
 		});
 		$(".load-tienda").click(function() {
-			$(".js-to-load").load("tienda.html #tienda-container");
+			$(".js-to-load").load("tienda_2.html #tienda-container");
 		});
 		$(".load-tienda").click(function() {
-			$(".js-to-load").load("tienda.html #tienda-container");
+			$(".js-to-load").load("tienda_2.html #tienda-container");
 		});
 	});
 }(jQuery));

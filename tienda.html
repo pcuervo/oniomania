@@ -30,9 +30,10 @@
             </div>
         </header>
         <div id="tienda-container" class="[ center block ] [ clearfix ]">
+            <div class="center block"><i class="fa fa-shopping-cart"></i> <span>$0.00 MXN</span></div>
             <form role="form" class="[ clearfix ] [ tienda ] [ margin-bottom ]">
                 <!-- SLIDER PLAYERAS -->
-                <div id="sliderPlayera" class="[ carousel store slide ] [ col-xs-12 col-sm-4 ] [ clearfix ]" data-ride="carousel" data-interval="false">
+                <div id="sliderPlayera" class="[ carousel store slide ] [ col-xs-12 col-sm-4 ] [ clearfix ] [ margin-bottom-2x ]" data-ride="carousel" data-interval="false">
                     <!-- Wrapper for slides -->
                     <div class="[ carousel-inner ] [ tienda ]">
                         <div class="[ item active ] [ margin-bottom ] [ clearfix ]">
@@ -42,7 +43,7 @@
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
                             </div>
-                            <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                            <!-- <div class="[ col-xs-9 ] [ center block ] [ info ]">
                                 <label class="[ col-xs-4 ]">
                                     CH
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -55,7 +56,7 @@
                                     L
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="[ item ] [ margin-bottom ] [ clearfix ]">
                             <div class="[ center block ]">
@@ -64,7 +65,7 @@
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
                             </div>
-                            <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                            <!-- <div class="[ col-xs-9 ] [ center block ] [ info ]">
                                 <label class="[ col-xs-4 ]">
                                     CH
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -77,7 +78,7 @@
                                     L
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="[ item ] [ margin-bottom ] [ clearfix ]">
                             <div class="[ center block ] [ clearfix ]">
@@ -86,7 +87,7 @@
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
                             </div>
-                            <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                            <!-- <div class="[ col-xs-9 ] [ center block ] [ info ]">
                                 <label class="[ col-xs-4 ]">
                                     CH
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -99,12 +100,25 @@
                                     L
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
                     <a class="[ btn btn-primary ] [ center block ] [ ver-todos ]">Ver todos los modelos</a>
-
+                    <div class="[ col-xs-9 ] [ center block ] [ info ]">
+                        <label class="[ col-xs-4 ]">
+                            CH
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        </label>
+                        <label class="[ col-xs-4 ]">
+                            M
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        </label>
+                        <label class="[ col-xs-4 ]">
+                            L
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        </label>
+                    </div>
                     <!-- Controls -->
                     <a class="[ left ] [ carousel-control ]" href="#sliderPlayera" role="button" data-slide="prev">
                       <span class="[ glyphicon glyphicon-chevron-left ]"></span>
@@ -116,14 +130,21 @@
                 </div><!--SLIDER PLAYERAS-->
 
                 <!-- PREVIEW PLAYERA -->
-                <div class="[ hidden-xs col-sm-4 ] [ preview-playera ]">
-                    <img class="[ center block ]" src="images/tienda/Ready_TANK-WOMEN.png" alt="">
-                    <div class="[ radio ]">
-                    </div>
-                </div><!-- PREVIEW PLAYERA -->
+                <div class="[ hidden-xs col-sm-4 ] [ preview-playera ] [ clearfix ]">
+                    <div >
+                        <div class="clearfix">
+                            <img class="[ center block ]" src="images/tienda/Ready_TANK-WOMEN.png" alt="">
+                            <div class="[ radio ]">
+                            </div>
+                        </div>
+                    </div><!-- PREVIEW PLAYERA -->
+                        <div class="col-xs-12 clearfix">
+                            <input type="number">
+                        </div>
+                </div>
 
                 <!-- SLIDER PLAYERAS -->
-                <div id="estampados" class="[ carousel store slide ] [ col-xs-12 col-sm-4 ] [ clearfix ]" data-ride="carousel" data-interval="false">
+                <div id="estampados" class="[ carousel store slide ] [ col-xs-12 col-sm-4 ] [ clearfix ] [ margin-bottom-2x ]" data-ride="carousel" data-interval="false">
                     <!-- Wrapper for slides -->
                     <div class="[ carousel-inner ] [ tienda ] [ clearfix ]">
                         <div class="[ item active ]">
@@ -133,7 +154,7 @@
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
                             </div>
-                            <div class="[ center block ] [ info ]">
+                            <!-- <div class="[ center block ] [ info ]">
                                 <label class="[  ]">
                                     <img class="colores" src="images/colores/romboN.png" alt="">
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -146,7 +167,7 @@
                                     <img class="colores" src="images/colores/romboD.png" alt="">
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="[ item ]">
                             <div class="[ center block ]">
@@ -155,7 +176,7 @@
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
                             </div>
-                            <div class="[ center block ] [ info ]">
+                            <!-- <div class="[ center block ] [ info ]">
                                 <label class="[  ]">
                                     <img class="colores" src="images/colores/romboN.png" alt="">
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -168,7 +189,7 @@
                                     <img class="colores" src="images/colores/romboD.png" alt="">
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="[ item ] [ clearfix ]">
                             <div class="[ center block ] [ clearfix ]">
@@ -177,7 +198,7 @@
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
                             </div>
-                            <div class="[ center block ] [ info ]">
+                            <!-- <div class="[ center block ] [ info ]">
                                 <label class="">
                                     <img class="colores" src="images/colores/romboN.png" alt="">
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -190,10 +211,24 @@
                                     <img class="colores" src="images/colores/romboD.png" alt="">
                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                 </label>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <a class="[ btn btn-primary ] [ center block ] [ ver-todos ]">Ver todos los diseños</a>
+                    <div class="[ center block ] [ info ]">
+                            <label class="[  ]">
+                                <img class="colores" src="images/colores/romboN.png" alt="">
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            </label>
+                            <label class="[  ]">
+                                <img class="colores" src="images/colores/romboM.png" alt="">
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            </label>
+                            <label class="[  ]">
+                                <img class="colores" src="images/colores/romboD.png" alt="">
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            </label>
+                        </div>
                     <!-- Controls -->
                     <a class="[ left ] [ carousel-control ]" href="#estampados" role="button" data-slide="prev">
                       <span class="[ glyphicon glyphicon-chevron-left ]"></span>
