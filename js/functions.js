@@ -19,18 +19,14 @@
 			$(".menu-desktop").toggleClass("menu-down-mobile");
 		});
 
-
-		$(".load-tienda").click(function() {
-			$(".js-to-load").load("tienda_2.html #tienda-container");
+		$(".load-acerca").click(function() {
+			$(".js-to-load").load("acerca.html #loaded-container");4
+		});
+		$(".load-contacto").click(function() {
+			$(".js-to-load").load("contacto.html #loaded-container");
 		});
 		$(".load-tienda").click(function() {
-			$(".js-to-load").load("tienda_2.html #tienda-container");
-		});
-		$(".load-tienda").click(function() {
-			$(".js-to-load").load("tienda_2.html #tienda-container");
-		});
-		$(".load-tienda").click(function() {
-			$(".js-to-load").load("tienda_2.html #tienda-container");
+			$(".js-to-load").load("tienda_2.html #loaded-container");
 		});
 	});
 }(jQuery));

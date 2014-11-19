@@ -8,6 +8,52 @@ body { height: 100%; min-width: 320px !important; overflow: hidden; }
     letter-spacing: .07em;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rombo:before {
+    content: "\e600";
+}
+.icon-tags:before {
+    content: "\e601";
+}
+.icon-social-twitter-circular:before {
+    content: "\e602";
+}
+.icon-social-facebook-circular:before {
+    content: "\e603";
+}
+.icon-social-tumbler-circular:before {
+    content: "\e604";
+}
+.icon-shopping-cart:before {
+    content: "\e605";
+}
+
+
+
 
 
 
@@ -50,6 +96,22 @@ body { height: 100%; min-width: 320px !important; overflow: hidden; }
     font-family: @font-family-serif;
     font-size: 1.2em;
     line-height: 1.5em;
+}
+
+.border-right{
+    border-right: 1px solid #333;
+}
+
+.border-left{
+    border-left: 1px solid #333;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #333;
+}
+
+.border-top{
+    border-top: 1px solid #333;
 }
 
 button{
@@ -144,7 +206,7 @@ hr{
                     margin: 0 auto;
                 }
             }
-            a{
+            a{  margin-bottom: 10px;
                 display: block;
                 text-align: center;
                 letter-spacing: 2px;
@@ -198,15 +260,23 @@ hr{
         }
     }
     .menu-down-mobile{
-        top: 10vh;
+        height: 50vh;
+        top: 5vh;
+        border-bottom: 1px solid #333;
+        background-color: rgba(255,255,255,0.8);
         -webkit-transition: all ease 1s;
         -moz-transition: all ease 1s;
         -ms-transition: all ease 1s;
         -o-transition: all ease 1s;
         transition: all ease 1s;
+        img{ opacity: 0; }
+        nav{
+            a{ margin-bottom: 10px; }
+        }
     }
     .menu-up-mobile{
         top: -60vh;
+        img{ opacity: 0; }
     }
     //SLIDER HOME************************************************
     .carousel{
@@ -266,6 +336,10 @@ hr{
 
 
     //CONTENT*********************************************
+
+    .carrito{ 
+        p{  padding: 10px; text-align: center; font-family: geometric; font-size: 1.2em; }
+    }
     .to-load{
         height: 100vh;
         width: 100%;
@@ -312,13 +386,13 @@ hr{
 
 
     //TIENDA **************************
-    #tienda-container{
+    #loaded-container{
         overflow-y: scroll;
-        height: 80vh;
-        width: 90%;
+        overflow-x: hidden;
+        height: 90vh;
 
         .item{
-            width: 100%;
+            width: 80%;
             
             p{ color: @gray-darker; }
 
@@ -326,10 +400,33 @@ hr{
                 text-align: center;
                 font-family: geometric;
             }
+
+            input[type="checkbox"]:not(:checked){ 
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    outline: 0;
+                    border: solid 2px @brand-primary;
+                    background: #FFF;
+                    margin: 5px 5px;
+                    -webkit-transition: all ease .5s;
+                    -webkit-appearance: none;
+                    transition: all ease .5s;
+            }
+            input[type="checkbox"]:checked{
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                outline: 0;
+                border: solid 2px @brand-primary;
+                background: @brand-success;
+                margin: 5px 5px;
+                -webkit-transition: all ease .5s;
+                -webkit-appearance: none;
+                transition: all ease .5s;
+            }
         }
-        input[type="radio"] {
-            display:none;
-        }
+
         .carousel-indicators {
             position: relative;
             left: 0;
@@ -341,7 +438,7 @@ hr{
             }
         }
         .preview-playera{
-            border-bottom: 1px solid @brand-primary;
+            // border-bottom: 1px solid @brand-primary;
         }
 
         .ver-todos{
@@ -371,11 +468,15 @@ hr{
 
 
     //CONTACTO**************************
+    .contacto{
+        padding-top: 5vh;
+    }
     .form-contact{
         font-family: geometric;
         button{
             margin-bottom: 30px;
         }
+        .form-control{ width: 100%; }
     }
     .form-group{
         margin-bottom: 15px;
@@ -410,7 +511,7 @@ hr{
         height: 10vh;
         z-index: 4;
         nav{
-            width: 90%;
+            width: 91%;
             height: auto;
             h1{
                 position: absolute;
@@ -463,8 +564,11 @@ hr{
 
 
     //CONTENT***********************************
+     .carrito{ 
+        p{  padding: 10px; text-align: right; font-family: geometric; font-size: 1.2em; }
+    }
     .to-load{
-        padding: 20vh 0;
+        padding: 15vh 0;
     }
     //*******************************************
 
@@ -475,7 +579,7 @@ hr{
     //SLIDER HOME************************************************
     .carousel{
             &.home{
-                height: 90vh;
+                height: 100vh;
                 z-index: 2;
             }
     }
@@ -492,10 +596,23 @@ hr{
 
 
     //TIENDA **************************
-    #tienda-container{
-        overflow-y: scroll;
+
+    .opciones-prenda{
+        }
+    #loaded-container{
+        overflow-y: hidden !important;
         // height: 80vh;
-        width: 90%;
+        width: 80%;
+        max-width: 1000px;
+        padding-top: 5vh;
+
+        .tipo-playera{
+            border-right: solid 1px #333;
+        }
+
+        .tipo-estampado{
+            border-left: solid 1px #333;
+        }
 
         .carousel-inner{
             &.tienda{
@@ -507,6 +624,8 @@ hr{
             width: 100%;
             // height: 45vh;
             p{ color: @gray-darker; }
+
+            img{ width: 70%; }
 
             label{
                 text-align: center;
@@ -548,11 +667,10 @@ hr{
         }
         .preview-playera{
             // height: 50vh;
-            border-bottom: solid 1px #000;
+            // border-bottom: solid 1px #000;
             padding: 0;
             img{
-                width: auto;
-                height: 100%;
+                width: 75%;
             }
         }
     }
@@ -568,7 +686,12 @@ hr{
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+    #loaded-container{
+        width: 80%;
+        height: 90vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
 }
 
 
