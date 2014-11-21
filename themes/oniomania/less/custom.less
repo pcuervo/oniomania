@@ -4,17 +4,17 @@ body { height: 100%; min-width: 320px !important; overflow: hidden; }
 //FONT FACE************
 @font-face {
     font-family: geometric !important;
-    src: url('../fonts/geometric.ttf');
+    src: url('fonts/geometric.ttf');
     letter-spacing: .07em;
 }
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot');
-    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.woff') format('woff'),
-        url('../fonts/icomoon.ttf') format('truetype'),
-        url('../fonts/icomoon.svg#icomoon') format('svg');
+    src:url('fonts/icomoon.eot');
+    src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.woff') format('woff'),
+        url('fonts/icomoon.ttf') format('truetype'),
+        url('fonts/icomoon.svg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -77,6 +77,12 @@ i {
 
 .block{ display: block !important; }
 .center{ margin-left: auto !important; margin-right: auto !important; float: none !important; }
+.clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 //********************
 
 
@@ -391,6 +397,7 @@ hr{
         overflow-y: scroll;
         overflow-x: hidden;
         height: 90vh;
+        padding: 0;
 
         .form-inline{ 
             .form-control{
@@ -494,7 +501,27 @@ hr{
 
     .carrito-producto{ border-bottom: 1px solid @brand-primary; padding-top: 2vh; font-family: geometric; text-transform: uppercase; }
 
+    .eliminar{  
+        .transition;
+        &:hover{ color: @brand-danger; }
+    }
+
     .carrito-total{ margin-right: 15px; }
+
+    .resumen-compra{ margin-left: 0; margin-right: 0; padding: 20px; border: 1px solid @brand-primary; }
+
+    .checkout{
+        margin-left: 0; margin-right: 0;
+        font-size: 18px;
+        input,select{ width: 90%; }
+        label{ text-transform: uppercase; padding-left: 0 }
+        h3, p, button, label{ font-family: geometric; }
+        
+        .input-normal{ width: auto; float: left; margin-right: 15px; }
+        .opcion-pago{ padding: 20px; border: 1px solid @brand-primary; }
+        .texto-opcion-pago{ padding: 20px; background: #eee; border: 1px solid @brand-primary; }
+    }
+    .confirmacion{ font-family: geometric; }
 
     //***************************************
 
@@ -631,7 +658,7 @@ hr{
 
     //TIENDA **************************
     #loaded-container{
-        overflow-y: hidden !important;
+        overflow-y: scroll;
         // height: 80vh;
         width: 80%;
         max-width: 1000px;

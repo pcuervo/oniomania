@@ -32,6 +32,10 @@
         </div>
         <div class="[ col-xs-12 ] [ texto-opcion-pago ] [ pago-tarjeta-box ]">
             <form role="[ form ]">
+            	<div class="[ col-xs-12 ] [ margin-bottom ]">
+            		<img class="[ img-responsive ]" src="<?php echo THEMEPATH; ?>images/tarjeta-deb-cred.png" alt="">
+            	</div>
+                <div class="clear"></div>
                 <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
                     <label for="nombre">Nombre y apellido*</label>
                     <input type="text" class="[ form-control ]" id="nombre" placeholder="Nombre">
@@ -96,6 +100,9 @@
             </div>
         </div>
         <div class="[ col-xs-12 ] [ border-bottom ] [ texto-opcion-pago ] [ pago-paypal-box ]">
+        	<div class="[ col-xs-12 ] [ margin-bottom ]">
+        		<img class="[ img-responsive ]" src="<?php echo THEMEPATH; ?>images/paypal.png" alt="">
+        	</div>
             <p>Al hacer click en confirmar compra te estará redirigiendo al sitio de papal donde terminarás el proceso de pago</p>
         </div>
         <div class="[ col-xs-12 ] [ border-bottom ] [ opcion-pago ] [ pago-entrega ]">
@@ -118,7 +125,10 @@
             </div>
         </div>
         <div class="[ col-xs-12 ] [ border-bottom ] [ texto-opcion-pago ] [ pago-transferencia-box ]">
-            <p>El pago debe ser en efectivo. El horario de entrega es de 9am a 7pm y podrá tardar hasta 2 días adicionales a nuetros tiempos de entrega. Te llamaremos para confirmar la órden antes de enviar el pedido.</p>
+            <div class="[ col-xs-12 ] [ margin-bottom ]">
+                <img class="[ img-responsive ]" src="<?php echo THEMEPATH; ?>images/banorte-ixe.png" alt="">
+            </div>
+            <p>Las instrucciones para la transferencia bancaria las recibirás directamente a tu correo, y también las podrás ver en el siguiente paso.</p>
         </div>
         <div class="[ col-xs-12 ] [ border-bottom ] [ opcion-pago ] [ pago-oxxo ]">
             <div class="[ radio ]">
@@ -129,6 +139,9 @@
             </div>
         </div>
         <div class="[ col-xs-12 ] [ border-bottom ] [ texto-opcion-pago ] [ pago-oxxo-box ]">
+        	<div class="[ col-xs-12 ] [ margin-bottom ]">
+        		<img class="[ img-responsive ]" src="<?php echo THEMEPATH; ?>images/oxxo.png" alt="">
+        	</div>
             <p>Las instrucciones detalladas te aparecerán en el siguiente paso y recibieras un recibo a tu correo.</p>
         </div>
         <div class="[ col-xs-12 ] [ border-bottom ] [ opcion-pago ] [ pago-deposito ]">
@@ -140,6 +153,9 @@
             </div>
         </div>
         <div class="[ col-xs-12 ] [ border-bottom ] [ texto-opcion-pago ] [ pago-deposito-box ]">
+            <div class="[ col-xs-12 ] [ margin-bottom ]">
+                <img class="[ img-responsive ]" src="<?php echo THEMEPATH; ?>images/banorte-ixe.png" alt="">
+            </div>
             <p>Las instrucciones para el depósito bancario las recibirás directamente a tu correo, y también las podrás ver en el siguiente paso.</p>
         </div>
     </div>
