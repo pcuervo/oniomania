@@ -77,12 +77,6 @@ i {
 
 .block{ display: block !important; }
 .center{ margin-left: auto !important; margin-right: auto !important; float: none !important; }
-.clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 //********************
 
 
@@ -119,8 +113,6 @@ i {
 .border-top{
     border-top: 1px solid #333;
 }
-
-.btn-primary:hover{ background: #fff; color: @brand-primary; .transition }
 
 button{
     &.white{
@@ -345,7 +337,7 @@ hr{
 
     //CONTENT*********************************************
 
-    .carrito{
+    .carrito{ 
         p{  padding: 10px; text-align: center; font-family: geometric; font-size: 1.2em; }
     }
     .to-load{
@@ -354,7 +346,7 @@ hr{
         background-color: #fff;
         position: absolute;
         z-index: 3;
-        top: 100vh;
+        top: 100vh; 
     }
 
     .up{ top: 10vh; }
@@ -400,7 +392,7 @@ hr{
         overflow-x: hidden;
         height: 90vh;
 
-        .form-inline{
+        .form-inline{ 
             .form-control{
                 margin-left: auto;
                 margin-right: auto;
@@ -410,7 +402,7 @@ hr{
 
         .item{
             width: 100%;
-
+            
             p{ color: @gray-darker; }
 
             label{
@@ -419,7 +411,7 @@ hr{
                 img{ width: 80%; }
             }
 
-            input[type="radio"]:not(:checked){
+            input[type="radio"]:not(:checked){ 
                     display: inline-block;
                     width: 15px;
                     height: 15px;
@@ -494,7 +486,7 @@ hr{
 
     // SHOPPING CART ************************
 
-    .shopping-cart{
+    .shopping-cart{ 
         select, input{ width: 100%; }
     }
 
@@ -504,23 +496,6 @@ hr{
 
     .carrito-total{ margin-right: 15px; }
 
-    .resumen-compra{ margin-left: 2%; margin-right: 2%; padding: 20px; border: 1px solid @brand-primary; }
-
-    .checkout{
-        margin-left: 2%; margin-right: 2%;
-        input,select{ width: 90%; }
-        label{ text-transform: uppercase; padding-left: 0; }
-        h3, p, button, label{ font-family: geometric; }
-        .input-normal{ width: auto; float: left; margin-right: 15px; }
-        .opcion-pago{ margin-left: 2%; margin-right:2%; padding: 0;
-                      input{ margin-top: 5px; }
-        }
-        .texto-opcion-pago{ padding: 20px; background: #eee; border: 1px solid @brand-primary; }
-    }
-
-    .confirmacion{ font-family: geometric;
-                   i{ color: @brand-success; }
-    }
     //***************************************
 
 
@@ -548,7 +523,7 @@ hr{
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+   
 }
 
 
@@ -620,7 +595,7 @@ hr{
 
 
     //CONTENT***********************************
-     .carrito{
+     .carrito{ 
         p{  padding: 10px; text-align: right; font-family: geometric; font-size: 1.2em; }
     }
     .to-load{
@@ -656,7 +631,7 @@ hr{
 
     //TIENDA **************************
     #loaded-container{
-        overflow-y: scroll;
+        overflow-y: hidden !important;
         // height: 80vh;
         width: 80%;
         max-width: 1000px;
@@ -705,7 +680,7 @@ hr{
             }
         }
         input[type="radio"] {
-
+            
         }
         .carousel-indicators {
             position: relative;
