@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Oniomania</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <!-- Font Awesome -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="clearfix">
+            <div class="[ menu-desktop ] [ clearfix ] [ bottom-transition ]">
+                <nav class="[ center-block ]">
+                    <a class="[ rombo ]"><img src="images/rombo.png" alt=""></a>
+                    <a class="[ menu ]">Home</a>
+                    <a class="[ menu ]">Acerca</a>
+                    <a class="[ menu ]">Tienda</a>
+                    <a class="[ menu ]">Contacto</a>
+                    <a class="[ rombo ]"><img src="images/rombo.png" alt=""></a>
+                    <h1 class="[ center-block ] [ hide-menu ]">
+                        <img src="images/logo_M.png" alt="" />
+                    </h1>
+                </nav>
+            </div>
+        </header>
+        <div class="[ container-fluid ]" id="loaded-container">
+            <div class="[ border-top ] [ carrito ] [ clearfix ] [ margin-bottom-2x ]">
+                <div class="[ col-xs-12 ] [ center block ]">
+                    <a href="#" class="[ load-shopping-cart ] [ text-uppercase ] [  right ]"><i class="icon-shopping-cart"></i>  <span>$00.00</span></a>
+                </div>
+            </div>
+            <div class="[ row ] [ margin-bottom ] [ shopping-cart ][ carrito-producto ]">
+                <div class="[ col-xs-12 col-md-3 ] [ margin-bottom ] ">
+                    <p class="[ text-center ]">Artículo tal</p>
+                    <img  class="[ col-xs-6 col-md-12 ][ img-responsive ] [ center block ]" src="images/tienda/preview.png" alt="...">
+                </div><!-- TIPO DE PLAYERA-->
+                <div class="[ col-xs-6 col-md-2 ] [ margin-bottom ]">
+                    <p class="[ text-center ]">Talla</p>
+                    <select class="[ form-control ] [ margin-bottom ] [ carrito-input ]">
+                        <option  value="" disabled selected>Escoge una talla</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div><!-- TIPO DE PLAYERA-->
+                <div class="[ col-xs-6 col-md-2 ] [ margin-bottom ]">
+                    <p class="[ text-center ]">Color</p>
+                    <select class="[ form-control ] [ margin-bottom ] [ carrito-input ]">
+                        <option value="" disabled selected>Escoge un color</option>
+                        <option>Negro</option>
+                        <option>Magenta</option>
+                        <option>Dorado</option>
+                    </select>
+                </div><!-- TIPO DE PLAYERA-->
+                <div class="[ col-xs-6 col-md-2 ] [ margin-bottom ]">
+                    <p class="[ text-center ]">Cantidad</p>
+                    <input class="[ form-control ] [ margin-bottom ] [ carrito-input ]" type="number" placeholder="cantidad">
+                </div><!-- TIPO DE PLAYERA-->
+                <div class="[ col-xs-6 col-md-2 ] [ margin-bottom ] [ right ]">
+                    <p class="[ text-center ]">Precio</p>
+                    <p class="[ text-center ] [ carrito-input ]">$250.00</p>
+                </div><!-- TIPO DE PLAYERA-->
+            </div>
+            <div class="[ row ] [ margin-bottom ]">
+                <div class="[ col-xs-6 col-md-2 ] [ margin-bottom ] [ center bock ] [ carrito-total ]">
+                    <p class="[ text-center ]">Total</p>
+                    <p class="[ text-center ]">$250.00</p>
+                </div><!-- TIPO DE PLAYERA-->
+            </div>
+            <div class="[ row ] [ margin-bottom-2x ]">
+                <button class="[ btn btn-primary ] [ load-checkout ] [ center block ]">checkout</button>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/functions.js"></script>
+    </body>
+</html>

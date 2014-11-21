@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Oniomania</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <!-- Font Awesome -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="clearfix">
+            <div class="[ menu-desktop ] [ clearfix ] [ bottom-transition ]">
+                <nav class="[ center-block ]">
+                    <a class="[ rombo ]"><img src="images/rombo.png" alt=""></a>
+                    <a class="[ menu ]">Home</a>
+                    <a class="[ menu ]">Acerca</a>
+                    <a class="[ menu ]">Tienda</a>
+                    <a class="[ menu ]">Contacto</a>
+                    <a class="[ rombo ]"><img src="images/rombo.png" alt=""></a>
+                    <h1 class="[ center-block ] [ hide-menu ]">
+                        <img src="images/logo_M.png" alt="" />
+                    </h1>
+                </nav>
+            </div>
+        </header>
+        <div class="[ container-fluid ]" id="loaded-container">
+            <div class="[ border-top ] [ carrito ] [ clearfix ] [ margin-bottom-2x ]">
+                <div class="[ col-xs-12 ] [ center block ]">
+                    <a href="#" class="[ load-shopping-cart ] [ text-uppercase ] [  right ]"><i class="icon-shopping-cart"></i>  <span>$00.00</span></a>
+                </div>
+            </div>
+            <div class="[ row ] [ margin-bottom ] [ resumen-compra ]">
+                <h3>Resumen de compra</h3>
+                <div class="[ col-xs-12 col-md-3 ]"><p><span>#</span> Artículos</p></div>
+                <div class="[ col-xs-12 col-md-3 ]"><p>Total: <span>$00.00</span></p></div>
+            </div>
+            <div class="[ row ] [ margin-bottom ] [ checkout ]">
+                <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                    <h3>Datos de envío</h3>
+                    <p>Campos obligatorios *</p>
+                </div>
+                <div class="clear"></div>
+                <form role="[ form ]">
+                    <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" class="[ form-control ]" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                        <label for="apellido">Apellido*</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="[ form-control ]" id="email" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                        <label for="calle">Calle y número*</label>
+                        <input type="text" class="[ form-control ]" id="calle" placeholder="Calle">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                        <label for="codigo-post">Código postal*</label>
+                        <input type="number" class="[ form-control ]" id="codigo-post" placeholder="Código postal">
+                    </div>
+                    <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                        <label for="colonia">Colonia*</label>
+                        <input type="text" class="[ form-control ]" id="colonia" placeholder="Colonia">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                        <label for="ciudad">Ciudad o Municipio*</label>
+                        <input type="text" class="[ form-control ]" id="ciudad" placeholder="Ciudad">
+                    </div>
+                    <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                        <label for="estado">Estado*</label>
+                        <select class="[ form-control ]" id="estado">
+                            <option value="">Aguascalientes</option>
+                            <option value="">Baja California</option>
+                            <option value="">Baja California Sur</option>
+                            <option value="">Campeche</option>
+                            <option value="">Chiapas</option>
+                            <option value="">Chihuahua</option>
+                            <option value="">Coahuila</option>
+                            <option value="">Colima</option>
+                            <option value="">Distrito Federal</option>
+                            <option value="">Durango</option>
+                            <option value="">Estado de México</option>
+                            <option value="">Guanajuato</option>
+                            <option value="">Guerrero</option>
+                            <option value="">Hidalgo</option>
+                            <option value="">Jalisco</option>
+                            <option value="">Michoacán</option>
+                            <option value="">Morelos</option>
+                            <option value="">Nayarit</option>
+                            <option value="">Nuevo León</option>
+                            <option value="">Oaxaca</option>
+                            <option value="">Puebla</option>
+                            <option value="">Querétaro</option>
+                            <option value="">Quintana Roo</option>
+                            <option value="">San Luis Potosí</option>
+                            <option value="">Sinaloa</option>
+                            <option value="">Sonora</option>
+                            <option value="">Tabasco</option>
+                            <option value="">Tamaulipas</option>
+                            <option value="">Tlaxcala</option>
+                            <option value="">Veracruz</option>
+                            <option value="">Yucatán</option>
+                            <option value="">Zacatecas</option>
+                        </select>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="[ form-group ] [ col-xs-12 col-md-6 ]">
+                        <label for="telefono">Teléfono*</label>
+                        <input type="number" class="[ form-control ]" id="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="[ col-xs-12 ] [ margin-bottom ]">
+                        <button type="submit" class="[ btn btn-primary ] [ back-shopping-cart ] [ margin-bottom-2x ]">Volver</button>
+                        <button type="submit" class="[ btn btn-primary ] [ load-metodo-pago ] [ margin-bottom-2x ]">Continuar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/functions.js"></script>
+    </body>
+</html>
