@@ -508,10 +508,10 @@ hr{
 
     .carrito-total{ margin-right: 15px; }
 
-    .resumen-compra{ margin-left: 0; margin-right: 0; padding: 20px; border: 1px solid @brand-primary; }
+    .resumen-compra{ margin-left: 2%; margin-right: 2%; padding: 20px; border: 1px solid @brand-primary; }
 
     .checkout{
-        margin-left: 0; margin-right: 0;
+        margin-left: 2%; margin-right: 2%;
         font-size: 18px;
         input,select{ width: 90%; }
         label{ text-transform: uppercase; padding-left: 0 }
@@ -539,6 +539,12 @@ hr{
     }
     .form-group{
         margin-bottom: 15px;
+    }
+
+    footer{ height: 10vh; padding: 10px; background: @brand-primary; color: #fff; border-top: 1px solid @brand-primary;
+            a{ margin-left: 15px; margin-right: 15px; color: #fff; text-decoration: none; .transition;
+               &:hover{ color: darken(#fff, 30%); text-decoration: none; }
+            }
     }
     //**********************************
 }
@@ -759,7 +765,7 @@ hr{
 @media only screen and (min-width : 992px) {
     #loaded-container{
         width: 80%;
-        height: 90vh;
+        height: 80vh;
         overflow-y: scroll;
         overflow-x: hidden;
     }
