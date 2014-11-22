@@ -4,17 +4,17 @@ body { height: 100%; min-width: 320px !important; overflow: hidden; }
 //FONT FACE************
 @font-face {
     font-family: geometric !important;
-    src: url('../fonts/geometric.ttf');
+    src: url('fonts/geometric.ttf');
     letter-spacing: .07em;
 }
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot');
-    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.woff') format('woff'),
-        url('../fonts/icomoon.ttf') format('truetype'),
-        url('../fonts/icomoon.svg#icomoon') format('svg');
+    src:url('fonts/icomoon.eot');
+    src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.woff') format('woff'),
+        url('fonts/icomoon.ttf') format('truetype'),
+        url('fonts/icomoon.svg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -119,8 +119,6 @@ i {
 .border-top{
     border-top: 1px solid #333;
 }
-
-.btn-primary:hover{ background: #fff; color: @brand-primary; .transition }
 
 button{
     &.white{
@@ -345,7 +343,7 @@ hr{
 
     //CONTENT*********************************************
 
-    .carrito{
+    .carrito{ 
         p{  padding: 10px; text-align: center; font-family: geometric; font-size: 1.2em; }
     }
     .to-load{
@@ -354,7 +352,7 @@ hr{
         background-color: #fff;
         position: absolute;
         z-index: 3;
-        top: 100vh;
+        top: 100vh; 
     }
 
     .up{ top: 10vh; }
@@ -399,8 +397,9 @@ hr{
         overflow-y: scroll;
         overflow-x: hidden;
         height: 90vh;
+        padding: 0;
 
-        .form-inline{
+        .form-inline{ 
             .form-control{
                 margin-left: auto;
                 margin-right: auto;
@@ -410,7 +409,7 @@ hr{
 
         .item{
             width: 100%;
-
+            
             p{ color: @gray-darker; }
 
             label{
@@ -419,7 +418,7 @@ hr{
                 img{ width: 80%; }
             }
 
-            input[type="radio"]:not(:checked){
+            input[type="radio"]:not(:checked){ 
                     display: inline-block;
                     width: 15px;
                     height: 15px;
@@ -494,7 +493,7 @@ hr{
 
     // SHOPPING CART ************************
 
-    .shopping-cart{
+    .shopping-cart{ 
         select, input{ width: 100%; }
     }
 
@@ -502,25 +501,28 @@ hr{
 
     .carrito-producto{ border-bottom: 1px solid @brand-primary; padding-top: 2vh; font-family: geometric; text-transform: uppercase; }
 
+    .eliminar{  
+        .transition;
+        &:hover{ color: @brand-danger; }
+    }
+
     .carrito-total{ margin-right: 15px; }
 
-    .resumen-compra{ margin-left: 2%; margin-right: 2%; padding: 20px; border: 1px solid @brand-primary; }
+    .resumen-compra{ margin-left: 0; margin-right: 0; padding: 20px; border: 1px solid @brand-primary; }
 
     .checkout{
-        margin-left: 2%; margin-right: 2%;
+        margin-left: 0; margin-right: 0;
+        font-size: 18px;
         input,select{ width: 90%; }
-        label{ text-transform: uppercase; padding-left: 0; }
+        label{ text-transform: uppercase; padding-left: 0 }
         h3, p, button, label{ font-family: geometric; }
+        
         .input-normal{ width: auto; float: left; margin-right: 15px; }
-        .opcion-pago{ margin-left: 2%; margin-right:2%; padding: 0;
-                      input{ margin-top: 5px; }
-        }
+        .opcion-pago{ padding: 20px; border: 1px solid @brand-primary; }
         .texto-opcion-pago{ padding: 20px; background: #eee; border: 1px solid @brand-primary; }
     }
+    .confirmacion{ font-family: geometric; }
 
-    .confirmacion{ font-family: geometric;
-                   i{ color: @brand-success; }
-    }
     //***************************************
 
 
@@ -548,7 +550,7 @@ hr{
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+   
 }
 
 
@@ -620,7 +622,7 @@ hr{
 
 
     //CONTENT***********************************
-     .carrito{
+     .carrito{ 
         p{  padding: 10px; text-align: right; font-family: geometric; font-size: 1.2em; }
     }
     .to-load{
@@ -705,7 +707,7 @@ hr{
             }
         }
         input[type="radio"] {
-
+            
         }
         .carousel-indicators {
             position: relative;
