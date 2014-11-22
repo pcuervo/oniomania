@@ -24,7 +24,7 @@
 
 		$(".load-acerca").on('click', function(e) {
 			e.preventDefault();
-			$(".js-to-load").load("acerca.html #loaded-container");
+			$(".js-to-load").load(site_url+"page-acerca.php #loaded-container");
 		});
 		$("body").on('click', '.load-shopping-cart',  function(e) {
 			e.preventDefault();
