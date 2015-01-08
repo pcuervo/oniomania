@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Oniomania</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="style.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <!-- Font Awesome -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="clearfix">
+                <div class="menu-desktop clearfix menu-bottom">
+                    <nav class="[ center block ] [ clearfix ]">
+                        <i class="[ icon-rombo ]"></i>
+                        <a class="[ menu ] [ load-acerca ]">Acerca de</a>
+                        <a class="[ menu ] [ load-tienda ]">Tienda</a>
+                        <a class="[ menu ] [ load-contacto ]">Contacto</a>
+                        <i class="[ icon-rombo ]"></i>
+                        <h1 class="[ center block ] [ show-home ]">
+                            <img src="images/imagotipo-m.png" alt="" />
+                        </h1>
+                    </nav>
+                </div>
+                <div class="[ menu-mobile show-menu-mobile ] [ hidden-sm hidden-md hidden-lg ]">
+                    <a class="center block navbar-brand" href="#"><img class="center block" src="images/imagotipo-m.png" alt=""></a>
+                </div>
+            </header>
+            <!-- Full Page Image Background Carousel Header -->
+            <div id="myCarousel" class="carousel home slide carousel-fade" data-ride="carousel">
+                <!-- Wrapper for Slides -->
+                <div class="carousel-inner slider-home">
+                    <div class="item active">
+                        <!-- Set the first background image using inline CSS below. -->
+                        <div class="fill" style="background-image:url('images/bg-01.jpg');"></div>
+                    </div>
+                    <div class="item">
+                        <!-- Set the second background image using inline CSS below. -->
+                        <div class="fill" style="background-image:url('images/bg-02.jpg');"></div>
+                    </div>
+                    <div class="item">
+                        <!-- Set the third background image using inline CSS below. -->
+                        <div class="fill" style="background-image:url('images/bg-03.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Content -->
+            <div class="[ to-load ] [ js-to-load ] [ center block ]">
+
+            </div>
+            <div class="modal fade" id="playeras-todo">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="[ modal-title ] [ text-center ]">Escoge tu playera</h4>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="[ clearfix ] [ list-unstyled ] [ lista-productos ]">
+                                <li class="[ col-xs-6 ]">
+                                    <div class="radio">
+                                        <label>
+                                            <img class="[ img-responsive ]" src="images/tienda/tank-02.png" alt="">
+                                             <input class="center-block" type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- #playeras-todo -->
+            <div class="modal fade" id="estampados-todo">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="[ modal-title ] [ text-center ]">Escoge un diseño</h4>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="[ clearfix ] [ list-unstyled ] [ lista-productos ]">
+                                <li class="[ col-xs-6 ]">
+                                    <div class="radio">
+                                        <label>
+                                            <img class="[ img-responsive ]" src="images/disenos/rombos.png" alt="">
+                                             <input class="center-block" type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- #playeras-todo -->
+        </div>
+
+        <!-- /.container -->
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/functions.min.js"></script>
+        <!-- Script to Activate the Carousel -->
+        <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+        </script>
+    </body>
+</html>
