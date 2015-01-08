@@ -163,6 +163,8 @@ hr{
     margin: 0;
     border: solid 1px #000;
 }
+
+label{ font-weight: normal; }
 //TERMINA GENERAL*******************
 
 
@@ -416,7 +418,9 @@ hr{
             label{
                 text-align: center;
                 font-family: geometric;
-                img{ width: 80%; }
+                font-size: 14px;
+                font-weight: normal;
+                img{ width: auto; height: 120px; }
             }
 
             input[type="radio"]:not(:checked){ 
@@ -429,6 +433,7 @@ hr{
                     margin: 5px 5px;
                     -webkit-transition: all ease .5s;
                     -webkit-appearance: none;
+                    cursor: pointer;
                     transition: all ease .5s;
             }
             input[type="radio"]:not(old):checked{
@@ -448,11 +453,23 @@ hr{
         .tipo-playera{
             border-right: solid 1px #333;
             margin-bottom: 40px;
+            label{ font-size: 14px; }
+            select{ width: 70%; background-image: url("images/select.png"); background-position: right; background-repeat: no-repeat; }
         }
 
         .tipo-estampado{
             border-left: solid 1px #333;
             margin-bottom: 40px;
+            select{ width: 70%; background-image: url("images/select.png"); background-position: right; background-repeat: no-repeat; }
+        }
+
+        .escoge-estampado{ 
+            border-top: solid 1px #333;
+            border-bottom: solid 1px #333;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding-top: 25px;
+            padding-bottom: 25px;
         }
 
         .carousel-indicators {
@@ -700,7 +717,9 @@ hr{
             label{
                 text-align: center;
                 font-family: geometric;
-                img{ width: 70%; }
+                font-size: 14px;
+                font-weight: normal;
+                img{ width: auto; height: 120px; }
             }
             .product{
                 height: 45vh;
@@ -714,7 +733,7 @@ hr{
             }
         }
         input[type="radio"] {
-            
+            cursor: pointer;
         }
         .carousel-indicators {
             position: relative;

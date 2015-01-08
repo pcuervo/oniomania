@@ -40,97 +40,97 @@
             <div class="opciones-prenda">
                 <div class="[ row ] [ margin-bottom border-bottom ] [ galeria-productos ] [ clearfix ]">
                     <div class="[ col-xs-12 col-md-4 ] [ tipo-playera ]">
-                        <div id="slider-playera" class="[ carousel slide ]" data-interval="false">
-                            <!-- Wrapper for slides -->
-                            <div class="[ carousel-inner ]" role="listbox">
-                                <div class="[ item ] [ active ] [  ]">
-                                    <label for="" class="[ center block ]">
-                                        <input type="radio" name="playera" value="playera-1" id="playera-1" style="opacity: 0;">
-                                        <img  class="[ img-responsive ] [ center block ]" src="images/tienda/ins-playera.png" alt="...">
-                                    </label>
-                                </div>
-                                <div class="[ item ] [  ]">
-                                    <label for="playera-1" class="[ center block ]">
-                                        <input type="radio" name="playera" value="playera-1" >
-                                        <img  class="[ img-responsive ] [ center block ]" src="images/tienda/tank-02.png" alt="...">
-                                    </label>
-
-                                </div>
-                                <div class="[ item ] [ ]">
-                                    <label for="playera-2" class="[ center block ]">
-                                        <input type="radio" name="playera" value="playera-2" id="playera-2">
-                                        <img  class="[ img-responsive ] [ center block ]" src="images/tienda/tank-02.png" alt="...">
-                                    </label>
-                                </div>
+                        <form role="[ form ]">
+                            <div class="[ form-group ] [ col-xs-12 ]">
+                                <label for="nombre" class="[ tienda-custom ]">Tipo de playera</label>
+                                <select class="[ form-control ]" id="nombre" placeholder="Tipo de playera">
+                                    <option value="">Manga corta</option>
+                                    <option value="">Tank</option>
+                                    <option value="">Ombliguera</option>
+                                </select>
                             </div>
+                            <div class="[ form-group ] [ col-xs-12 ] [ escoge-estampado ]">
+                                <label for="nombre">Escoge el diseño</label>
+                                    <div id="slider-estampado" class="[ carousel ] [ slide ] [ js-tienda-slider ]" data-interval="false">
+                                        <!-- Wrapper for slides -->
+                                        <div class="[ carousel-inner ]" role="listbox">
+                                            <div class="[ item ] [ active ] [  ]">
+                                                <label for="diseno-1" class="[ center block ]">
+                                                    <img  class="[ img-responsive ] [ center block ]" src="images/disenos/plano.png" alt="...">
+                                                    <input type="radio" name="diseno" value="diseno-1" id="diseno-1">
+                                                </label>
+                                            </div>
+                                            <div class="[ item ] [  ]">
+                                                <label for="diseno-1" class="[ center block ]">
+                                                    <img  class="[ img-responsive ] [ center block ]" src="images/disenos/chic.png" alt="...">
+                                                    <input type="radio" name="diseno" value="diseno-2" id="diseno-2">
+                                                </label>
+                                            </div>
+                                            <div class="[ item ] [  ]">
+                                                <label for="diseno-2" class="[ center block ]">
+                                                    <img  class="[ img-responsive ] [ center block ]" src="images/disenos/rombos.png" alt="...">
+                                                    <input type="radio" name="diseno" value="diseno-3" id="diseno-3">
+                                                </label>
+                                            </div>
+                                        </div>
 
-                            <!-- Controls -->
-                            <a class="[ left carousel-control ]" href="#slider-playera" role="button" data-slide="prev">
-                                <span class="[ fa fa-angle-left fa-2x ]"></span>
-                            </a>
-                            <a class="[ right carousel-control ]" href="#slider-playera" role="button" data-slide="next">
-                                <span class="[ fa fa-angle-right fa-2x ]"></span>
-                            </a>
-                        </div>
-                        <!-- <a class="[ center-block ] [ text-center text-uppercase ] [ margin-bottom ]" data-toggle="modal" data-target="#playeras-todo">Ver todos</a> -->
-                        <button class="[ btn btn-primary ] [ center-block ] [ hidden-md hidden-lg ]">Siguiente</button>
+                                        <!-- Controls -->
+                                        <a class="[ left carousel-control ]" href="#slider-estampado" role="button" data-slide="prev">
+                                            <span class="[ fa fa-angle-left fa-2x ]"></span>
+                                        </a>
+                                        <a class="[ right carousel-control ]" href="#slider-estampado" role="button" data-slide="next">
+                                            <span class="[ fa fa-angle-right fa-2x ]"></span>
+                                        </a>
+                                    </div>
+                            </div>
+                            <div class="[ form-group ] [ col-xs-12 ]">
+                                <label for="nombre">Color del estampado</label>
+                                <select class="[ form-control ]" id="nombre" placeholder="Tipo de playera">
+                                    <option value="">Magenta</option>
+                                    <option value="">Negro</option>
+                                    <option value="">Dorado</option>
+                                </select>
+                            </div>
+                        </form>
                     </div><!-- TIPO DE PLAYERA-->
                     <div class="[ col-xs-12 col-md-4 ] [ right ] [ tipo-estampado ]">
-                        <div id="slider-estampado" class="carousel slide" data-interval="false">
-                            <!-- Wrapper for slides -->
-                            <div class="[ carousel-inner ]" role="listbox">
-                                <div class="[ item ] [ active ] [  ]">
-                                    <label for="diseno-1" class="[ center block ]">
-                                        <input type="radio" name="diseno" value="diseno-1" id="diseno-1" style="opacity: 0;">
-                                        <img  class="[ img-responsive ] [ center block ]" src="images/tienda/ins-estampado.png" alt="...">
-                                    </label>
-                                </div>
-                                <div class="[ item ] [  ]">
-                                    <label for="diseno-1" class="[ center block ]">
-                                        <input type="radio" name="diseno" value="diseno-1" id="diseno-1">
-                                        <img  class="[ img-responsive ] [ center block ]" src="images/disenos/chic.png" alt="...">
-                                    </label>
-                                </div>
-                                <div class="[ item ] [  ]">
-                                    <label for="diseno-2" class="[ center block ]">
-                                        <input type="radio" name="diseno" value="diseno-2" id="diseno-2">
-                                        <img  class="[ img-responsive ] [ center block ]" src="images/disenos/rombos.png" alt="...">
-                                    </label>
-                                </div>
-                            </div>
-
-                            <!-- Controls -->
-                            <a class="[ left carousel-control ]" href="#slider-estampado" role="button" data-slide="prev">
-                                <span class="[ fa fa-angle-left fa-2x ]"></span>
-                            </a>
-                            <a class="[ right carousel-control ]" href="#slider-estampado" role="button" data-slide="next">
-                                <span class="[ fa fa-angle-right fa-2x ]"></span>
-                            </a>
-                        </div>
                         <!-- <a class="[ center-block ] [ text-center text-uppercase ] [ margin-bottom ]" data-toggle="modal" data-target="#estampados-todo">Ver todos</a> -->
-                        <button class="[ btn btn-primary ] [ center-block ] [ hidden-md hidden-lg ]">Siguiente</button>
+                        <form role="[ form ]">
+                            <div class="[ form-group ] [ col-xs-12 ]">
+                                <label for="nombre" class="[ tienda-custom ]">Talla</label>
+                                <select class="[ form-control ]" id="nombre" placeholder="Tipo de playera">
+                                    <option value="">Small</option>
+                                    <option value="">Medium</option>
+                                    <option value="">Large</option>
+                                </select>
+                            </div>
+                            <div class="[ form-group ] [ col-xs-12 ] [ escoge-estampado ]">
+                                <label for="nombre">Descripción</label>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe molestiae corrupti obcaecati fuga doloremque maiores eligendi sed iusto enim provident. Sit omnis cupiditate molestias magnam voluptatibus possimus iure tempora vero!</p>  
+                            </div>
+                            <div class="[ form-group ] [ col-xs-12 ]">
+                                <label for="nombre">Cantidad</label>
+                                <select class="[ form-control ]" id="nombre" placeholder="Tipo de playera">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </form>
                     </div><!-- TIPO DE ESTAMPADO-->
                     <div class="[ col-xs-12 col-md-4 ] [  ] [ preview-playera ]">
                         <img  class="[ img-responsive center-block ]" src="images/preview/2j.jpg" align="bottom" alt="...">
                     </div><!-- PREVIEW PRENDA-->
                 </div>
-                <div class="[ row ] [ margin-bottom-2x ]">
-                    <div class="[ col-xs-12 col-sm-8 ] [ form-inline ]">
-                        <select class="[ form-control ] [ margin-bottom ]">
-                            <option  value="" disabled selected>Escoge una talla</option>
-                            <option>Chica</option>
-                            <option>Mediana</option>
-                            <option>Grande</option>f
-                        </select>
-                        <select class="[ form-control ] [ margin-bottom ]">
-                            <option value="" disabled selected></option>
-                            <option>Negro</option>
-                            <option>Magenta</option>
-                            <option>Dorado</option>
-                        </select>
-                        <input class="[ form-control ] [ margin-bottom ]" type="number" placeholder="cantidad">
-                    </div>
-                    <div class="[ col-xs-12 col-sm-4 ] [  ]">
+                <div class="[ row ] [ margin-bottom ]">
+                    <div class="[ col-xs-12 col-sm-4 ] [ center block ]">
                         <a class="[ btn btn-primary ] [ left ]"><i class="icon-shopping-cart"></i> Agregar</a>
                         <button class="[ btn btn-primary ] [ right ] [ js-load-checkout ]">Checkout</button>
                     </div>

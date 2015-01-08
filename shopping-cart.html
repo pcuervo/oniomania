@@ -8,25 +8,27 @@
         <title>Oniomania</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <!-- Custom CSS -->
         <!-- Font Awesome -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
         <header class="clearfix">
-            <div class="[ menu-desktop ] [ clearfix ] [ bottom-transition ]">
-                <nav class="[ center-block ]">
-                    <a class="[ rombo ]"><img src="images/rombo.png" alt=""></a>
-                    <a class="[ menu ]">Home</a>
-                    <a class="[ menu ]">Acerca</a>
-                    <a class="[ menu ]">Tienda</a>
-                    <a class="[ menu ]">Contacto</a>
-                    <a class="[ rombo ]"><img src="images/rombo.png" alt=""></a>
-                    <h1 class="[ center-block ] [ hide-menu ]">
-                        <img src="images/logo_M.png" alt="" />
+            <div class="menu-desktop clearfix menu-bottom">
+                <nav class="[ center block ] [ clearfix ]">
+                    <i class="[ icon-rombo ]"></i>
+                    <a class="[ menu ] [ load-acerca ]">Acerca de</a>
+                    <a class="[ menu ] [ load-tienda ]">Tienda</a>
+                    <a class="[ menu ] [ load-contacto ]">Contacto</a>
+                    <i class="[ icon-rombo ]"></i>
+                    <h1 class="[ center block ] [ show-home ]">
+                        <img src="images/imagotipo-m.png" alt="" />
                     </h1>
                 </nav>
+            </div>
+            <div class="[ menu-mobile show-menu-mobile ] [ hidden-sm hidden-md hidden-lg ]">
+                <a class="center block navbar-brand" href="#"><img class="center block" src="images/imagotipo-m.png" alt=""></a>
             </div>
         </header>
         <div class="[ container-fluid ]" id="loaded-container">
@@ -74,7 +76,7 @@
                 </div><!-- TIPO DE PLAYERA-->
             </div>
             <div class="[ row ] [ margin-bottom-2x ]">
-                <button class="[ btn btn-primary ] [ load-checkout ] [ center block ]">checkout</button>
+                <button class="[ btn btn-primary ] [ right ] [ js-load-checkout ]">Checkout</button>
             </div>
         </div>
 
@@ -82,6 +84,6 @@
         <script src="js/jquery.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/functions.js"></script>
+        <script src="js/functions.min.js"></script>
     </body>
 </html>

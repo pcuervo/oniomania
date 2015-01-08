@@ -54,11 +54,10 @@
 			console.log('load-confirmacion');
 			$(".js-to-load").load("compra-confirmada.html #loaded-container");
 		});
-		$('.carousel').carousel({
+		$('.js-home-slider').carousel({
             interval: 5000 //changes the speed
         })
-        $('.slider').carousel({
-    		pause: true,
+        $('.js-tienda-slider').carousel({
     		interval: false
 		});
 		$('div').on('click', '.trigger', function() {
